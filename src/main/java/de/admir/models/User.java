@@ -3,6 +3,7 @@ package de.admir.models;
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.OneToOne;
+import javax.persistence.Table;
 
 /**
  * Author: Admir Memic
@@ -10,6 +11,7 @@ import javax.persistence.OneToOne;
  * Date: 03.08.2016
  */
 @Entity
+@Table(name = "blabber_user")
 public class User extends IdentifiableModel {
     private String firstName;
     private String lastName;

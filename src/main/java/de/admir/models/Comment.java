@@ -13,7 +13,7 @@ import javax.persistence.ManyToOne;
 @Entity
 public class Comment extends IdentifiableModel {
     @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "user_id")
+    @JoinColumn(name = "blabber_user_id")
     private User user;
     private String content;
 
