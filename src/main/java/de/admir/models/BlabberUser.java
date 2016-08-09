@@ -1,9 +1,9 @@
 package de.admir.models;
 
 import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.OneToOne;
-import javax.persistence.Table;
 
 /**
  * Author: Admir Memic
@@ -11,13 +11,13 @@ import javax.persistence.Table;
  * Date: 03.08.2016
  */
 @Entity
-@Table(name = "blabber_user")
-public class User extends IdentifiableModel {
+public class BlabberUser extends IdentifiableModel {
     private String firstName;
     private String lastName;
+    @Column(unique = true)
     private String username;
     private String passwordHash;
-    @OneToOne(cascade= CascadeType.ALL)
+    @OneToOne(cascade = CascadeType.ALL)
     private Blog blog;
 
     public String getFirstName() {

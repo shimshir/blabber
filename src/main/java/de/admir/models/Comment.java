@@ -14,15 +14,15 @@ import javax.persistence.ManyToOne;
 public class Comment extends IdentifiableModel {
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "blabber_user_id")
-    private User user;
+    private BlabberUser blabberUser;
     private String content;
 
-    public User getUser() {
-        return user;
+    public BlabberUser getBlabberUser() {
+        return blabberUser;
     }
 
-    public void setUser(User user) {
-        this.user = user;
+    public void setBlabberUser(BlabberUser blabberUser) {
+        this.blabberUser = blabberUser;
     }
 
     public String getContent() {

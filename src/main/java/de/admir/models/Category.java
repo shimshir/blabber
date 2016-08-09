@@ -3,6 +3,7 @@ package de.admir.models;
 import java.util.List;
 
 import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
 
@@ -13,6 +14,7 @@ import javax.persistence.OneToMany;
  */
 @Entity
 public class Category extends IdentifiableModel {
+    @Column(unique = true)
     private String code;
     private String name;
     @OneToMany(cascade = CascadeType.ALL)
