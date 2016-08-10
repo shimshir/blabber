@@ -1,9 +1,16 @@
 package de.admir.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import org.springframework.security.access.annotation.Secured;
+import org.springframework.security.access.prepost.PreAuthorize;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.OneToOne;
+import javax.persistence.Table;
 
 /**
  * Author: Admir Memic
@@ -11,7 +18,8 @@ import javax.persistence.OneToOne;
  * Date: 03.08.2016
  */
 @Entity
-public class BlabberUser extends IdentifiableModel {
+@Table(name = "blabber_user")
+public class User extends IdentifiableModel {
     private String firstName;
     private String lastName;
     @Column(unique = true)

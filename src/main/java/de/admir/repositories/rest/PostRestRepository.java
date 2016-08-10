@@ -1,6 +1,6 @@
-package de.admir.repositories;
+package de.admir.repositories.rest;
 
-import de.admir.models.Category;
+import de.admir.models.Post;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -13,5 +13,5 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 @PreAuthorize("hasRole('ROLE_USER')")
-public interface CategoryRepository extends JpaRepository<Category, String> {
+public interface PostRestRepository extends JpaRepository<Post, String> {
 }
