@@ -10,5 +10,7 @@ insert into post (id, title, content) values (1, 'Spring Boot Rest Example', 'Th
 insert into category_posts (category_id, posts_id) values (1, 1);
 
 insert into blog_categories (blog_id, categories_id) values (1, 1);
-insert into comment (id, content, blabber_user_id) values (1, 'Not bad!', 2);
+insert into comment (id, content, blabber_user_id) values (1, 'Advanced guide coming soon.', 2);
+insert into comment (id, content, blabber_user_id) values (2, 'Meh ...', 3);
 insert into post_comments (post_id, comments_id) values (1, 1);
+insert into post_comments (post_id, comments_id) values (1, 2);

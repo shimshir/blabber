@@ -42,6 +42,7 @@ class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .authorizeRequests().antMatchers(HttpMethod.POST, "/users", "/users/*").permitAll().and()
                 .authorizeRequests().antMatchers(HttpMethod.PUT, "/users/*").authenticated().and()
                 .authorizeRequests().antMatchers(HttpMethod.PATCH, "/users/*").authenticated().and()
+                .authorizeRequests().antMatchers(HttpMethod.GET, "/comments/*/user", "/comments/*/user/*").authenticated().and()
                 .authorizeRequests().antMatchers(HttpMethod.GET, "/users/*/blog").permitAll().and()
                 .authorizeRequests().antMatchers(HttpMethod.PUT, "/blogs/**", "/posts/**", "/comments/**", "/categories/**").authenticated().and()
                 .authorizeRequests().antMatchers(HttpMethod.POST, "/blogs/**", "/posts/**", "/comments/**", "/categories/**").authenticated().and()
