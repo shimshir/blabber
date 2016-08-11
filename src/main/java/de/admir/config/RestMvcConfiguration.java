@@ -17,7 +17,7 @@ import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurerAdapt
  * Date: 08.08.2016
  */
 @Configuration
-@EnableJpaRepositories(basePackages = "de.admir.repositories")
+@EnableJpaRepositories(basePackages = {"de.admir.repositories.rest"})
 public class RestMvcConfiguration extends RepositoryRestConfigurerAdapter {
     @Override
     public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config) {
