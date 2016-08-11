@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>de.admir</OriginalElement>
+  <nodes>
+    <node x="687.35" y="58.724999999999994">de.admir.repositories.rest.PostRestRepository</node>
+    <node x="-41.20000000000002" y="355.53749999999997">de.admir.models.Category</node>
+    <node x="-176.175" y="198.78749999999997">de.admir.models.Post</node>
+    <node x="473.69999999999993" y="417.5">de.admir.config.RestMvcConfiguration</node>
+    <node x="53.44999999999999" y="206.52499999999998">de.admir.models.IdentifiableModel</node>
+    <node x="193.34999999999997" y="33.61249999999998">de.admir.models.User</node>
+    <node x="208.5625" y="309.57499999999993">de.admir.models.Blog</node>
+    <node x="408.73749999999995" y="316.3625">de.admir.repositories.rest.BlogRestRepository</node>
+    <node x="-106.57500000000005" y="480.4625000000001">de.admir.TestUtils</node>
+    <node x="143.61249999999995" y="731.8875">de.admir.BlogsIntegrationTests</node>
+    <node x="481.1" y="176.4375">de.admir.repositories.rest.UserRestRepository</node>
+    <node x="965.4499999999998" y="59.087500000000006">de.admir.repositories.rest.CategoryRestRepository</node>
+    <node x="-63.650000000000006" y="48.249999999999986">de.admir.models.Comment</node>
+    <node x="709.0" y="214.0">de.admir.services.BlabberUserDetailsService</node>
+    <node x="-116.86250000000013" y="732.3999999999999">de.admir.UsersIntegrationTests</node>
+    <node x="1145.5625" y="183.31249999999997">de.admir.repositories.rest.CommentRestRepository</node>
+    <node x="709.9" y="416.625">de.admir.config.WebSecurityConfiguration</node>
+    <node x="656.2000000000002" y="648.05">de.admir.Application</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="de.admir.BlogsIntegrationTests" target="de.admir.TestUtils">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="de.admir.services.BlabberUserDetailsService" target="de.admir.repositories.rest.CommentRestRepository">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="de.admir.models.Blog" target="de.admir.models.Category">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="de.admir.services.BlabberUserDetailsService" target="de.admir.repositories.rest.PostRestRepository">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="de.admir.services.BlabberUserDetailsService" target="de.admir.repositories.rest.CategoryRestRepository">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="de.admir.config.WebSecurityConfiguration" target="de.admir.services.BlabberUserDetailsService">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="de.admir.models.Category" target="de.admir.models.Post">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="de.admir.models.User" target="de.admir.models.IdentifiableModel">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="de.admir.models.Post" target="de.admir.models.IdentifiableModel">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="de.admir.models.User" target="de.admir.models.Blog">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="de.admir.models.Comment" target="de.admir.models.User">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="de.admir.models.Comment" target="de.admir.models.IdentifiableModel">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="de.admir.UsersIntegrationTests" target="de.admir.TestUtils">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="de.admir.models.Blog" target="de.admir.models.IdentifiableModel">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="de.admir.services.BlabberUserDetailsService" target="de.admir.repositories.rest.UserRestRepository">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="de.admir.models.Post" target="de.admir.models.Comment">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="de.admir.models.Category" target="de.admir.models.IdentifiableModel">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9195402298850575" x="599.46875" y="468.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
